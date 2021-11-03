@@ -32,8 +32,8 @@ clock-hand {
 }
 
 #hour { transition: transform 500ms; }
-#hour { transform: rotate(150deg); }
-.am #hour { transform: rotate(210deg); }
+#hour { transform: rotate(210deg); }
+.am #hour { transform: rotate(150deg); }
 #minute-tens { transform: rotate(90deg); }
 #minute-ones { transform: rotate(30deg); }
 #second-tens { transform: rotate(-30deg); }
