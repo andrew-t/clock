@@ -16,10 +16,10 @@ export class ClockHand extends HTMLElement {
 				transform-origin: 1vmin 0;
 			}
 			.stick { height: 25vmin; }
-			.stick div { height: 12vmin; }
+			.stick div { height: 11vmin; }
 			.perpendicular { transform: rotate(90deg); }
 			.end, .extension { top: 24vmin; }
-			.middle { top: 12vmin; }
+			.middle { top: 12vmin; height: 6vmin !important; }
 			.right {
 				transform: translate(-1vmin, 6vmin);
 			}
