@@ -40,5 +40,6 @@ clock-hand {
 #second-ones { transform: rotate(-90deg); }
 
 @media (prefers-color-scheme: dark) {
-	body { background: 000; }
+	body { background: black; }
+	.clock::before { border-color: #ddd; }
 }
