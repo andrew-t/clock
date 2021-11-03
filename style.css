@@ -38,3 +38,7 @@ clock-hand {
 #minute-ones { transform: rotate(30deg); }
 #second-tens { transform: rotate(-30deg); }
 #second-ones { transform: rotate(-90deg); }
+
+@media (prefers-color-scheme: dark) {
+	body { background: 000; }
+}

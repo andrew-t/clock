@@ -35,6 +35,9 @@ export class ClockHand extends HTMLElement {
 			:not(.active) {
 				height: 0 !important;
 			}
+			@media (prefers-color-scheme: dark) {
+				div { background: #ddd; }
+			}
 		`);
 	}
 
