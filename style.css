@@ -1,0 +1,40 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #eee;
+}
+
+.clock {
+	width: 100vmin;
+	height: 100vmin;
+	position: absolute;
+	left: calc(50vw - 50vmin);
+	top: calc(50vh - 50vmin);
+}
+
+.clock::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 43vmin;
+	top: 43vmin;
+	width: 14vmin;
+	height: 14vmin;
+	box-sizing: border-box;
+	border: 2vmin solid black;
+	border-radius: 100%;
+}
+
+clock-hand {
+	position: absolute;
+	left: 50vmin;
+	top: 50vmin;
+}
+
+#hour { transition: transform 500ms; }
+#hour { transform: rotate(150deg); }
+.am #hour { transform: rotate(210deg); }
+#minute-tens { transform: rotate(90deg); }
+#minute-ones { transform: rotate(30deg); }
+#second-tens { transform: rotate(-30deg); }
+#second-ones { transform: rotate(-90deg); }
