@@ -10,7 +10,7 @@ export class ClockHand extends HTMLElement {
 			div {
 				display: block;
 				position: absolute;
-				transition: transform 500ms, height 500ms;
+				transition: all 500ms;
 				background: black;
 				width: 2vmin;
 				transform-origin: 1vmin 0;
@@ -26,10 +26,10 @@ export class ClockHand extends HTMLElement {
 			.left {
 				transform: scale(-1, 1) translate(1vmin, 6vmin);
 			}
-			.even.right {
+			.even.active.right {
 				transform: translate(-3vmin, 6vmin);
 			}
-			.even.left {
+			.even.active.left {
 				transform: scale(-1, 1) translate(-1vmin, 6vmin);
 			}
 			:not(.active) {
@@ -37,6 +37,12 @@ export class ClockHand extends HTMLElement {
 			}
 			@media (prefers-color-scheme: dark) {
 				div { background: #ddd; }
+			}
+			.stick:not(.active) {
+				transform: height 500ms 0, translate 500ms 500ms !important;
+			}
+			.stick:not(.active) div {
+				top: 0;
 			}
 		`);
 	}
